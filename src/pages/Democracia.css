@@ -1,0 +1,111 @@
+/* Estilo geral do container */
+.demo-container {
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Estilo do título principal */
+h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Parágrafo de introdução */
+p {
+  color: #7f8c8d;
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Container flex para inputs */
+.inputs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/* Grupos de input */
+.input-group {
+  flex: 1 1 calc(50% - 10px); /* 50% de largura com 10px de margem */
+  margin-bottom: 20px;
+}
+
+/* Título de cada grupo */
+.input-group h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #34495e;
+  font-weight: 500;
+}
+
+/* Estilo dos inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Botão de calcular experiência */
+.btn-calcular {
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.btn-calcular:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+/* Mensagem de erro */
+.erro {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* Resultados */
+.resultados {
+  margin-top: 30px;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #34495e;
+}
+
+.resultados h2 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.resultados p {
+  font-weight: 700;
+}
