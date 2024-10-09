@@ -1,0 +1,132 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corpo com gradiente de fundo */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container principal da aplicação */
+.App {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efeito de hover para o container */
+.App:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Título principal */
+h1 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilo dos rótulos dos inputs */
+label {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Estilo dos inputs */
+input,
+select {
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+  background: #f9f9f9;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Foco nos inputs */
+input:focus,
+select:focus {
+  border-color: #6a11cb;
+  outline: none;
+  background: #eef1f7;
+}
+
+/* Estilo dos botões */
+button {
+  padding: 12px;
+  width: 100%;
+  background-color: #6a11cb;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Efeito hover no botão */
+button:hover {
+  background-color: #2575fc;
+  transform: scale(1.05);
+}
+
+/* Container dos resultados */
+.resultados {
+  margin-top: 30px;
+  text-align: left;
+  background: #eef1f7;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/* Título dos resultados */
+.resultados h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #2575fc;
+  font-weight: 600;
+}
+
+/* Estilo dos parágrafos dos resultados */
+.resultados p {
+  margin: 8px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Estilo especial para o texto em destaque */
+.resultados p strong {
+  color: #6a11cb;
+  font-weight: 700;
+}
